@@ -26,7 +26,7 @@ spec:
       containers:
         - name: llama-stack
           # Image with run.yaml baked in
-          image: quay.io/redhat-ai-dev/agentic-llama-stack:latest
+          image: quay.io/tpetkos/test-llamastack-26012903:76823fcdc84a419c7f23aafa3e0d60925a358267@sha256
           imagePullPolicy: Always
           envFrom:
             # Non-sensitive config from template (URLs, model names)
