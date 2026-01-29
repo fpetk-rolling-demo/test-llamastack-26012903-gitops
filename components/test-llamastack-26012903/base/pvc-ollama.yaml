@@ -1,0 +1,20 @@
+# Persistent storage for Ollama models
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  labels:
+    app.kubernetes.io/instance: test-llamastack-26012903-ollama
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: test-llamastack-26012903-ollama-data
+    app.kubernetes.io/part-of: test-llamastack-26012903
+    app.kubernetes.io/component: ollama
+  name: test-llamastack-26012903-ollama-data
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      # Ollama models can be large (llama-guard3:8b ~5GB)
+      storage: 20Gi
