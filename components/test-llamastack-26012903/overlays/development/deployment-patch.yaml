@@ -13,5 +13,5 @@ spec:
     spec:
       containers:
         - name: streamlit-app
-          image: quay.io/tpetkos/test-llamastack-26012903:24a5161177cf0b9c04476007cf837a12fa67fbb4
+          image: quay.io/tpetkos/test-llamastack-26012903:f79d4949d2b93714b811cdb1e88054a73cd431b3
 
