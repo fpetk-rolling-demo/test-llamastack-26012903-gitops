@@ -29,7 +29,7 @@ spec:
       containers:
         - name: streamlit-app
           # Default bootstrap image - will be updated by Tekton pipeline via deployment-patch
-          image: quay.io/tpetkos/test-llamastack-26012903:76823fcdc84a419c7f23aafa3e0d60925a358267
+          image: quay.io/tpetkos/test-llamastack-26012903:24a5161177cf0b9c04476007cf837a12fa67fbb4
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
